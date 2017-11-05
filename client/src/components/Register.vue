@@ -5,11 +5,13 @@
     <input 
     type="email" 
     name="email" 
+    v-model ="email"
     placeholder="email" />
     <br>
     <input 
     type="password" 
     name="password" 
+    v-model="password"
     placeholder="password" />
     <br>
     <button>Register</button>
@@ -20,7 +22,19 @@
 export default {
   data () {
     return {
+      email: 'abc',
+      password: '123'
     }
+  },
+  watch: {
+    email (value) {
+      console.log('email has changed', value)
+    }
+  },
+  mounted () {
+    setTimeout(() => {
+      this.email = 'hello world'
+    }, 2000)
   }
 }
 </script>
