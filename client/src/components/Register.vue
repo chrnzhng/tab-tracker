@@ -37,6 +37,11 @@ export default {
     setTimeout(() => {
       this.email = 'hello world'
     }, 1000)
+  },
+  methods: {
+    register () {
+      console.log('register button was clicked')
+    }
   }
   // methods: {
   //   async register () {
