@@ -54,8 +54,7 @@ export default {
 .error {
   color: red
 }
-.toolbar__title {
-  color: white;
+.input-group--text-field input {
+  border-bottom: 1px solid black;
 }
-
 </style>
