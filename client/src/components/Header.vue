@@ -1,7 +1,9 @@
 <template>
  <v-toolbar fixed class="cyan" dark>
      <v-toolbar-title class="mr-4">
-         <span @click="navigateTo({name: 'root'})"> 
+         <span 
+         class="home"
+         @click="navigateTo({name: 'root'})"> 
             TabTracker
          </span>
      </v-toolbar-title>
@@ -36,4 +38,11 @@ export default {
 </script>
 
 <style scoped>
+.home {
+    cursor: pointer
+}
+
+.home:hover {
+    color: #E9E
+}
 </style>
