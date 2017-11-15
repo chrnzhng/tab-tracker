@@ -1,7 +1,9 @@
 <template>
  <v-toolbar fixed class="cyan" dark>
      <v-toolbar-title class="mr-4">
-         TabTracker
+         <span @click="navigateTo({name: 'root'})"> 
+            TabTracker
+         </span>
      </v-toolbar-title>
 
     <!-- TODO: Implement Me -->
