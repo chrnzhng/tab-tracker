@@ -22,7 +22,7 @@
           dark
           class="cyan"
           @click="login">
-          Register
+          Login
           </v-btn>
       </div>
           </div>
