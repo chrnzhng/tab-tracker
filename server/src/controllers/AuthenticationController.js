@@ -8,6 +8,7 @@ function jwtSignUser (user) {
         expiresIn: ONE_WEEK
     })
 }
+
 module.exports = {
     async register(req, res) {
         try {
@@ -43,9 +44,9 @@ module.exports = {
                 })
             }
 
-            const userJSON = user.toJSON()
+            const userJson = user.toJSON()
             res.send({
-                user: userJSON,
+                user: userJson,
                 token: jwtSignUser(userJson)
             })
             res.send(user.toJSON())
