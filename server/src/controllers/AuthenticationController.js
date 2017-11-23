@@ -1,6 +1,4 @@
-const {
-    User
-} = require('../models')
+const {User} = require('../models')
 const jwt = require('jsonwebtoken')
 const config = require('../config/config')
 
@@ -48,7 +46,7 @@ module.exports = {
             const userJSON = user.toJSON()
             res.send({
                 user: userJSON,
-                token: jwtSignUser(userJSON)
+                token: jwtSignUser(userJson)
             })
             res.send(user.toJSON())
         } catch (err) {
